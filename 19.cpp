@@ -14,14 +14,8 @@ int main(){
         cin>>w>>x>>y>>z;
         if (x==w || y==w ||z==w)
         cout<<"yes"<<endl;
-        else if(x+y+z == w)
+        else if(x+y+z == w||(x+y)==w||(x+z)==w||(y+z)==w)
         cout <<"yes"<<endl;
-        else if((x+y)==w )
-        cout <<"yes"<<endl;
-        else if ((x+z)==w)
-        cout<<"yes"<<endl;
-        else if((y+z)==w)
-        cout<<"yes"<<endl;
         else
         cout<<"no"<<endl;
     }
