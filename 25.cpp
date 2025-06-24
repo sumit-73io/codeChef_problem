@@ -35,24 +35,20 @@ Constraints
 
 */
 
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main(){
     int t;
     cin>>t;
     while(t--){
-        int x,y,MAX1, MAX2, maxA1, maxA2, maxB1, maxB2;
+        int x,y,aThenB,bThenA;
         cin>>x>>y;
-        maxA1 = 500-(x*2);
-        maxA2 = 500-((x+y)*2);
-        maxB1 = 1000-(y*4);
-        maxB2 = 1000-((x+y)*4);
-        MAX1 = maxA1 +maxB2;
-        MAX2 = maxA2 +maxB1;
-        if (MAX1 <MAX2)
-        cout << MAX2<<endl;
+        aThenB = 500-(x*2) + 1000-((x+y)*4);
+        bThenA = 500-((x+y)*2) + 1000-(y*4);
+        if (aThenB < bThenA)
+        cout << bThenA <<endl;
         else 
-        cout<<MAX1<<endl;
+        cout << aThenB << endl;
     }
     return 0;
 }
