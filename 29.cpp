@@ -44,8 +44,7 @@ int main() {
 	while(t--){
 	    int x,y,r, totalPlates;
 	    cin>>x>>y>>r;
-	    int extraStick = r/30;
-	    int totlal_sticks = x + extraStick;
+	    int totlal_sticks = x + r/30;
 	    if(totlal_sticks%y ==0)
 	    totalPlates = totlal_sticks/y;
 	    else
