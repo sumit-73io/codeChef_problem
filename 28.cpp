@@ -31,7 +31,8 @@ Constraints
 · 1 ≤ A, B ≤ 100
 · 1≤ X, Y ≤ 10
 */
-#include <bits/stdc++.h>
+
+#include <iostream>
 using namespace std;
 
 int main() {
